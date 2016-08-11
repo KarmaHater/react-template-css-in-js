@@ -1,7 +1,7 @@
 {
-  "name": "refugee-app",
+  "name": "",
   "version": "0.0.1",
-  "description": "refugee app for the slingshot project at zalando",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "lint": "eslint ./src",
@@ -57,6 +57,8 @@
     "node-sass": "^3.4.2",
     "redux-logger": "^2.6.1",
     "sass-loader": "^3.1.2",
+    "stylefmt": "^4.2.3",
+    "stylelint": "^7.1.0",
     "swap": "git+https://github.com/KarmaHater/swap.git"
   }
 }

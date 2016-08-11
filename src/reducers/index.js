@@ -1,8 +1,6 @@
 import {combineReducers} from 'redux';
-import medias from './media-reducer';
-import joke from './joke-reducer';
+import dummy from './dummy-reducer';
 
 export default combineReducers({
-    medias,
-    joke
+    dummy,
 });
