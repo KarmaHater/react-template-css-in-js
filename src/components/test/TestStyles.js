@@ -1,9 +1,12 @@
-import cxs from 'cxs';
+import cxs from "cxs";
+import { FONT_FAMILY } from "../../styles/constants/fontFamily.js";
 
 const styles = {
-  textColor: cxs({
-    color: 'red'
-  })
-}
+  textColor: color =>
+    cxs({
+      fontFamily: FONT_FAMILY.montserrat,
+      color: color
+    })
+};
 
 export default styles;

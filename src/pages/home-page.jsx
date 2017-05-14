@@ -2,9 +2,9 @@ import React, { Component } from "react";
 import { bindActionCreators } from "redux";
 import { connect } from "react-redux";
 import DummyActions from "./../store/actions/dummy-actions.js";
-import Test from './../components/test/Test';
+import Test from "./../components/test/Test";
 
-const HomePage = () => <Test />
+const HomePage = () => <Test />;
 
 function mapStateToProps(state) {
   return {
