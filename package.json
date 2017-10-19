@@ -10,11 +10,19 @@
     "start": "webpack-dev-server --hot --progress --colors",
     "stylelint": "./node_modules/.bin/stylelint src/styles/*.scss",
     "stylelint:fix": "./node_modules/.bin/stylefmt -R src/styles/",
-    "build": "webpack --progress --colors"
+    "build": "webpack --progress --colors",
+    "precommit": "lint-staged",
+    "prepush": "npm run test"
   },
   "keywords": [
     "test"
   ],
+  "lint-staged": {
+    "*.js": [
+      "npm run lint -- --fix",
+      "git add"
+    ]
+  },
   "author": "",
   "license": "",
   "dependencies": {
@@ -51,7 +59,9 @@
     "eslint": "^3.2.2",
     "eslint-plugin-babel": "^3.3.0",
     "eslint-plugin-react": "^6.0.0",
-    "mocha": "^2.5.3",
+    "husky": "^0.14.3",
+    "lint-staged": "^4.3.0",
+    "mocha": "^4.0.1",
     "redux-logger": "^2.6.1"
   }
 }
