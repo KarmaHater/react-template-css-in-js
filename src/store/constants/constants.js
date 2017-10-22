@@ -1,1 +1,1 @@
-export const DUMMY= 'DUMMY';
+export const FETCH_JOKE= 'FETCH_JOKE';
